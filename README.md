@@ -17,7 +17,7 @@
     - For Win 10 Home 1909 and lower, install Docker Toolkit.
     - Docker might not work on VSCode integrated terminal. In that case, open VSCode as an administrator, use ext cmd or use powershell.
     - Some commands might not work in cmd. Use powershell in that case.
-    - $(pwd) in mac is $(%cd%) in cmd and ${PWD} in powershell (https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10)
+    - `$(pwd)` in MacOS is `$(%cd%)` in Cmd and `${PWD}` in Powershell (https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10)
     - localhost:port might not work. Use 198.168.99.100:port instead.
 	- Network privileges might be required sometimes (https://unix.stackexchange.com/questions/459206/list-ip-tables-in-docker-container)
 	- All privileges: https://stackoverflow.com/questions/36425230/privileged-containers-and-capabilities

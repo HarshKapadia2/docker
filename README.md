@@ -118,5 +118,6 @@
 
 - [Linux file system](https://gist.github.com/HarshKapadia2/18150e1e57eab1f0e500f18feea890aa)
 - [Linux Terminal commands](https://github.com/HarshKapadia2/cli)
+- [Docker with a Linux distro](docker_linux.md)
 - [Windows Subsystem for Linux](https://gist.github.com/HarshKapadia2/714bba15f0f09d32c07cdde3c244be9f) (WSL)
 - [Windows Terminal](https://gist.github.com/HarshKapadia2/18daf23ab4a7d1cb9215ca9dc8b7099f) (WT)

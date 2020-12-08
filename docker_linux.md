@@ -29,6 +29,7 @@ Some tips to help with Linux in Docker.
 
 - `apt-get install vim`
 - `apt-get install man`
-- `apt-get install dnsutils`
-- `apt-get install net-tools`
-- `apt-get install iproute2`
+
+#### Networking packages
+
+- `apt-get install dnsutils net-tools iproute2 iputils-ping`

@@ -31,3 +31,4 @@ Some tips to help with Linux in Docker.
 - `apt-get install man`
 - `apt-get install dnsutils`
 - `apt-get install net-tools`
+- `apt-get install iproute2`

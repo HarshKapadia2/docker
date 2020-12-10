@@ -32,4 +32,10 @@ Some tips to help with Linux in Docker.
 
 #### Networking packages
 
-- `apt-get install dnsutils net-tools iproute2 iputils-ping dsniff`
+> `apt-get install <package_name>`
+
+- `dsniff` for `arpspoof`
+- `iputils-ping` for `ping`
+- `iproute2` for `ip route`
+- `net-tools` for `arp`, `ifconfig`, `netstat`
+- `dnsutils` for `nslookup`, `dig`

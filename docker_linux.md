@@ -32,4 +32,4 @@ Some tips to help with Linux in Docker.
 
 #### Networking packages
 
-- `apt-get install dnsutils net-tools iproute2 iputils-ping`
+- `apt-get install dnsutils net-tools iproute2 iputils-ping dsniff`

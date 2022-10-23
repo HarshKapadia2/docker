@@ -9,6 +9,7 @@ Some tips to help with Linux in Docker.
 - `docker container run --cap-add=NET_ADMIN -it -v "%cd%":/mnt --name kali kalilinux/kali-rolling`
   - [Giving network privileges to the container](https://unix.stackexchange.com/questions/459206/list-ip-tables-in-docker-container)
   - [Giving all privileges to the container](https://stackoverflow.com/questions/36425230/privileged-containers-and-capabilities)
+  - [Docker Networking Crash Course](https://www.youtube.com/watch?v=OU6xOM0SE4o)
 - `docker container start kali`
 - `docker exec -it kali bash`
 - `exit`

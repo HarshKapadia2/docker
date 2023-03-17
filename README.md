@@ -1,28 +1,47 @@
 # Docker
 
+## Table of Contents
+
+-   [Introduction](#introduction)
+-   [Linux and Networking](#linux-and-networking)
+-   [Commands](#commands)
+    -   [Miscellaneous Commands](#miscellaneous-commands)
+    -   [Images](#images)
+    -   [Containers](#containers)
+    -   [Bind Mount](#bind-mount)
+-   [Resources](#resources)
+
+## Introduction
+
 -   Crash course
     -   [Exploring Docker [1] - Getting Started](https://www.youtube.com/watch?v=Kyx2PsuwomE)
     -   [Exploring Docker [2] - Docker Compose With Node & MongoDB](https://www.youtube.com/watch?v=hP77Rua1E0c)
 -   [Docker in 100 secs](https://www.youtube.com/watch?v=Gjnup-PuquQ)
--   Aim: To run software services/progs/applications inside containers
+-   Aim: To run software services/progs/applications inside containers.
 -   Eg: Apache, MySQL, MongoDB, NginX (web server common to Apache), Wordpress, etc...
--   Advantages: Convenient, fast, simple, easy to re-create same env
--   Note:
-    -   NEW NOTE: [Docker Desktop for Windows Home is here!](https://www.docker.com/blog/docker-desktop-for-windows-home-is-here)
-    -   For Win 10 Home (2004 and above), Pro and Enterprise, install Docker Desktop.
-        -   For Win 10 Home 1909 and lower, install Docker Toolkit.
-        -   Docker might not work on VSCode integrated terminal. In that case, open VSCode as an administrator, use ext cmd or use powershell.
-        -   Some commands might not work in cmd. Use powershell in that case.
-        -   [`$(pwd)` in MacOS is `$(%cd%)` in Cmd and `${PWD}` in Powershell](https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10)
-        -   `localhost:port` might not work. Use `198.168.99.100:port` instead.
-    -   Container privileges
-        -   [Network privileges might be required sometimes](https://unix.stackexchange.com/questions/459206/list-ip-tables-in-docker-container)
-        -   [All privileges](https://stackoverflow.com/questions/36425230/privileged-containers-and-capabilities)
--   Docker Hub (https://hub.docker.com) === GitHub of Docker
+-   Advantages: Convenient, fast, simple, easy to re-create the same environment.
+-   [Docker Hub](https://hub.docker.com) == GitHub of Docker
+
+> NOTE:
+>
+> -   [Docker Desktop for Windows Home is here!](https://www.docker.com/blog/docker-desktop-for-windows-home-is-here)
+> -   For Win 10 Home (2004 and above), Pro and Enterprise, install Docker Desktop.
+> -   For Win 10 Home 1909 and lower, install Docker Toolkit.
+> -   Docker might not work on VSCode integrated terminal. In that case, open VSCode as an administrator, use ext cmd or use powershell.
+> -   Some commands might not work in cmd. Use Powershell in that case.
+> -   [`$(pwd)` in MacOS is `$(%cd%)` in Cmd and `${PWD}` in Powershell](https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10)
+> -   `localhost:port` might not work. Use `198.168.99.100:port` instead.
+> -   Container privileges
+>     -   [Network privileges might be required sometimes](https://unix.stackexchange.com/questions/459206/list-ip-tables-in-docker-container)
+>     -   [All privileges](https://stackoverflow.com/questions/36425230/privileged-containers-and-capabilities)
+
+## Linux and Networking
+
+Please refer to [linux-networking.md](linux-networking.md).
 
 ## Commands
 
-### Misc
+### Miscellaneous Commands
 
 -   `docker version`
 -   Server: Docker Engine (built on Go lang)
@@ -83,7 +102,7 @@
 
 ### Bind Mount
 
-> (Note: ports 80 or 8081 might not work with below example. Use 8080 or 8082 or 8083 or....)
+> NOTE: Ports 80 or 8081 might not work with below example. Use 8080, 8082, 8083...
 
 -   To create container:
     -   With Docker Toolbox:
@@ -94,13 +113,10 @@
     -   With Docker Desktop:
         `docker container run -it -v "%cd%":/mnt --name kali kalilinux/kali-rolling`
 
-## Misc Resources
+## Resources
 
 -   [Linux file system](https://gist.github.com/HarshKapadia2/18150e1e57eab1f0e500f18feea890aa)
 -   [Linux Terminal commands](https://harshkapadia2.github.io/cli)
--   [Docker with a Linux distro](linux.md)
--   Docker networking
-    -   [Docker Networking Crash Course](https://www.youtube.com/watch?v=OU6xOM0SE4o)
-    -   [How Linux processes your network packet](https://www.youtube.com/watch?v=3Ij0aZRsw9w)
+-   [Networking in a Linux Container in Docker](linux-networking.md)
 -   [Windows Subsystem for Linux](https://gist.github.com/HarshKapadia2/714bba15f0f09d32c07cdde3c244be9f) (WSL)
 -   [Windows Terminal](https://gist.github.com/HarshKapadia2/18daf23ab4a7d1cb9215ca9dc8b7099f) (WT)

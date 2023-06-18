@@ -115,8 +115,9 @@ Please refer to [linux-networking.md](linux-networking.md).
 
 ## Resources
 
+-   [Understanding Docker layers](https://devops.stackexchange.com/questions/1750/understanding-docker-layers)
+-   [Networking in a Linux Container in Docker](linux-networking.md)
 -   [Linux file system](https://gist.github.com/HarshKapadia2/18150e1e57eab1f0e500f18feea890aa)
 -   [Linux Terminal commands](https://harshkapadia2.github.io/cli)
--   [Networking in a Linux Container in Docker](linux-networking.md)
 -   [Windows Subsystem for Linux](https://gist.github.com/HarshKapadia2/714bba15f0f09d32c07cdde3c244be9f) (WSL)
 -   [Windows Terminal](https://gist.github.com/HarshKapadia2/18daf23ab4a7d1cb9215ca9dc8b7099f) (WT)
